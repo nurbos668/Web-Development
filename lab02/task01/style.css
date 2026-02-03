@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.fb-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    width: 100%;
+    padding: 20px;
+}
+
+.fb-info {
+    width: 580px;
+    padding-right: 32px;
+}
+
+.fb-logo {
+    height: 106px;
+    margin: -20px;
+}
+
+.fb-info h2 {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #1c1e21;
+}
+
+.login-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 20px;
+    width: 396px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 52px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.login-btn {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    height: 48px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.login-btn:hover {
+    background-color: #166fe5;
+}
+
+.forgot-link {
+    color: #1877f2;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dadde1;
+    margin-bottom: 20px;
+}
+
+.create-btn {
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    height: 48px;
+    padding: 0 16px;
+    cursor: pointer;
+    width: fit-content;
+    align-self: center;
+}
+
+.create-btn:hover {
+    background-color: #36a420;
+}
+
+.footer-note {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 28px;
+    color: #1c1e21;
+}
+
+.footer-note b {
+    cursor: pointer;
+}
+
+.footer-note b:hover {
+    text-decoration: underline;
+}

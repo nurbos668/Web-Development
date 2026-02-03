@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #1f2328;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #656d76;
+    max-width: 600px;
+    margin: 0 auto 32px;
+}
+
+.cta-btn {
+    background-color: #1f2328;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pricing-grid {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card.featured {
+    border: 2px solid #0969da;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 24px;
+    background: #0969da;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 0 0 8px;
+}
+
+.description {
+    font-size: 14px;
+    color: #656d76;
+    margin-bottom: 16px;
+    min-height: 40px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #656d76;
+}
+
+.card-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #d0d7de;
+    background: white;
+    margin-bottom: 16px;
+}
+
+.btn-dark {
+    background: #1f2328;
+    color: white;
+    border: none;
+}
+
+.btn-blue {
+    background: #0969da;
+    color: white;
+    border: none;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 24px;
+}
+
+ul li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #57ab5a;
+    font-weight: bold;
+}
+
+.add-ons {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.add-ons h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.add-ons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.add-on-card {
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    padding: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .pricing-grid, .add-ons-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+}
